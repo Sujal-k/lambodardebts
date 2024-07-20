@@ -7,6 +7,7 @@ import contactImage from '../../assets/contactUs.png';
 import callImage from '../../assets/Call_Contact.png';
 import emailImage from '../../assets/Email.png';
 import '../css/contact.css';
+import LCard from '../../components/js/l-card';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -79,6 +80,9 @@ function Contact() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minWidth: '100vw',  
+          // minWidth: '97vw', 
+          width:"100%",
+          height:"auto",
           display: 'flex',
           alignItems: 'center',
           padding: '50px'
@@ -148,6 +152,12 @@ function Contact() {
           </Button>
         </Modal.Footer>
       </Modal>
+      <h3 id='lower-head'>Our Locations</h3>
+      <div className='loc-cont'>     
+          <LCard title="location1" info="this is our new location" mobno="1234567890" />
+          <LCard title="location1" info="this is our new location" mobno="1234567890" />
+          <LCard title="location1" info="this is our new location" mobno="1234567890" />
+      </div>
     </section>
   );
 }
