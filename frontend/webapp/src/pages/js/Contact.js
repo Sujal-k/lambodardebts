@@ -78,8 +78,7 @@ function Contact() {
           backgroundImage: `url(${contactImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          minWidth: '100vw', 
-
+          minWidth: '100vw',  
           display: 'flex',
           alignItems: 'center',
           padding: '50px'
